@@ -93,6 +93,9 @@ body {
     color: #5aad53;
     font-size: 4em;
     margin: 0;
+    background: linear-gradient(to right,#535210, #5aad53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #con12 {
@@ -148,6 +151,9 @@ body {
 .h1 {
     font-size: 3em;
     font-weight: 900;
+    background: linear-gradient(to right,#535210, #5aad53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #con22 {
@@ -273,7 +279,9 @@ body {
     background: #5aad53;
     color: #1b1b1b;
     font-size: 1.3em;
+    border-radius: 20px;
     transition: all 0.2s;
+    box-shadow: 0 0 40px 0 #5aad53;
 }
 #con43{
     margin-bottom: 40px;
