@@ -20,7 +20,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    backdrop-filter: blur(50px);
+    background: #181818;
+    backdrop-filter: blur(5px);
+    box-shadow:0 0 10px 0 #5aad53;
 }
 
 #nlog {
@@ -37,6 +39,16 @@ body {
 #ncon {
     padding: 0.5em 1em;
     margin: 0.5em 1em;
+}
+
+#ncon a{
+    font-weight: 900;
+    transition: all 0.2s;
+}
+
+#ncon a:hover{
+    color: #5aad53;
+    transition: all 0.2s;
 }
 
 #nbtn {
@@ -182,8 +194,8 @@ body {
 }
 
 #hm{
-    background: #5aad53;
-    color: #181818;
+    background: #181818;
+    color: #5aad53;
     font-size: 1.3em;
     font-weight: 900;
     padding: 10px 30px;
@@ -191,7 +203,13 @@ body {
     border-radius: 10px;
     /* box-shadow: 0px 0px 40px 0px rgba(25, 104, 18, 0.479); */
 }
-
+#hm:hover{
+    background: #5aad53;
+    color: #181818;
+    transition: all 0.2s;
+    box-shadow:0 0 40px 0 #5aad53;
+    cursor: pointer;
+}
 /* Content 2 Ends */
 
 /* Content 3 */
@@ -249,6 +267,13 @@ body {
     background-color: #1b1b1b;
     border: none;
     font-size: 1.3em;
+}
+#con42 button:hover {
+    cursor: pointer;
+    background: #5aad53;
+    color: #1b1b1b;
+    font-size: 1.3em;
+    transition: all 0.2s;
 }
 #con43{
     margin-bottom: 40px;
@@ -395,6 +420,9 @@ body {
     #con21 p{
         padding: 1em;
         width: 100%;
+    }
+    #con4{
+        padding: 2em;
     }
     .h1{
         font-size: 2em;
