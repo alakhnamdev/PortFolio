@@ -314,14 +314,16 @@ body {
 
 #endbar {
     position: fixed;
-    top: 92%;
+    top: 90%;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 40px;
+    height: 60px;
+    width: 100%;
     z-index: 4;
+    background-color: #1b1b1b;
 }
 
 #endbar a {
@@ -335,6 +337,7 @@ body {
     font-size: 0.7em;
     color: #5aad53;
     font-weight: 900;
+    padding: 5px 0px;
 }
 .endbtimg{
     filter: invert(1);
@@ -473,6 +476,9 @@ body {
     }
 
     /* Navbar Ends */
+    #endbar{
+        display: flex;
+    }
 }
 @media only screen and (max-width:400px) {
     #con1{
