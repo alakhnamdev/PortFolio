@@ -314,7 +314,7 @@ body {
 
 #endbar {
     position: fixed;
-    top: 93.5%;
+    bottom: 0;
     left: 0;
     display: none;
     justify-content: center;
@@ -331,7 +331,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 100px;
     background-color: #1b1b1b;
     border: none;
     font-size: 0.7em;
