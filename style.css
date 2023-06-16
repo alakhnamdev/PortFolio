@@ -507,6 +507,9 @@ body {
         height: 250px;
         width: 250px;
     }
+    #endbar a{
+        width: 70px;
+    }
 }
 
 /* Responsive Ends */
