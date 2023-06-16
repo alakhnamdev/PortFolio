@@ -23,6 +23,7 @@ body {
     background: #181818;
     backdrop-filter: blur(5px);
     box-shadow:0 0 10px 0 #5aad53;
+    z-index: 4;
 }
 
 #nlog {
@@ -239,9 +240,23 @@ body {
 }
 
 #con32 img {
+    box-sizing: border-box;
     height: 300px;
     width: 300px;
+    border-radius: 50px;
+    opacity: 50%;
+    z-index: 0;
 }
+
+#con32 img:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 0px;
+    height: 320px;
+    width: 320px;
+    transition: all 0.5s;
+}
+
 
 /* Content 3 Ends */
 
@@ -294,6 +309,50 @@ body {
 }
 
 /* Content 4 Ends */
+
+/* Endbar */
+
+#endbar {
+    position: fixed;
+    top: 92%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40px;
+    z-index: 4;
+}
+
+#endbar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #1b1b1b;
+    border: none;
+    font-size: 0.7em;
+    color: #5aad53;
+    font-weight: 900;
+}
+.endbtimg{
+    filter: invert(1);
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+}
+#endbar a:hover{
+    background: #5aad53;
+    color: #181818;
+    transition: all 0.2s;
+    box-shadow:0 0 40px 0 #5aad53;
+    cursor: pointer;
+}
+#endbar a:hover img{
+    filter: invert(0);
+}
+/* Endbar Ends */
 
 /* Responsive */
 @media only screen and (max-width:1300px) {
