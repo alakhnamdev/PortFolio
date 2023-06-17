@@ -485,7 +485,15 @@ body {
 }
 
 /* Endbar Ends */
-
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+}
 /* Responsive */
 @media only screen and (max-width:1300px) {
     #mid-con {
