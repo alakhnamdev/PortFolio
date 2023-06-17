@@ -321,6 +321,7 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    box-shadow: 0 0 5px 0 #5aad53;
     transform: translate(-50%, -50%);
     background: #181818;
     height: 20em;
@@ -676,7 +677,7 @@ body {
     }
 
     #form {
-        height: 20em;
+        height: 26em;
         width: 15em;
         font-size: 1em;
     }
