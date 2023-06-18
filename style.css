@@ -301,7 +301,7 @@ body {
 /* Content 3 Ends */
 /* form */
 
-#con24 {
+#form-main {
     display: none;
     z-index: 3;
     backdrop-filter: blur(5px);
@@ -389,7 +389,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 90vh;
 }
 
 #con42 {
@@ -488,12 +487,12 @@ body {
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 0.5s;
+    transform:translate(-100%);
+    transition: all 0.2s;
 }
 .show{
     opacity: 1;
-    transform: translateX(0%);
+    transform:translate(0%);
     filter: blur(0px);
 }
 /* Responsive */
