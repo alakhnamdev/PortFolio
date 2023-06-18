@@ -30,12 +30,12 @@ $( "#slr").click(
 );
 $( "#hm").click(
 	function() {
-        $("#con24").show();
+        $("#form-main").show();
 	}
 );
 $( "#close").click(
 	function() {
-		$("#con24").hide();
+		$("#form-main").hide();
 	}
 );
 const observer = new IntersectionObserver((entries) => {
