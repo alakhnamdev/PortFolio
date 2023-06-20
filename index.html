@@ -16,14 +16,14 @@
     <title>PortFolio</title>
 </head>
 
-<body>
+<body id="theme">
     <!-- Navbar -->
     <div class="hidden" id="nav">
         <div class="hidden" id="nlog">
             <h1>Portfolio</h1>
         </div>
         <div class="hidden" id="nseg">
-            <div class="hidden" id="ncon"><a href="index.html">Home</a></div>
+            <div class="hidden" id="ncon"><a href="#con1">Home</a></div>
             <div class="hidden" id="ncon"><a href="#con2">About</a></div>
             <div class="hidden" id="ncon"><a href="#con3">Projects</a></div>
             <div class="hidden" id="ncon"><a href="#con4">Contact</a></div>
@@ -37,16 +37,17 @@
     <!-- Content 1 -->
     <div class="hidden" id="con1">
         <div class="hidden" id="con11">
-            <h1>Hi I'm a Coder</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae perferendis odit reprehenderit
-                deleniti, laudantium rem ad veniam sint architecto magni. Nisi quidem debitis unde dicta voluptates
-                necessitatibus minus aliquid deleniti. Vel aut cupiditate deleniti tenetur veritatis molestiae id
-                laudantium temporibus cum! Pariatur, quisquam nisi? Quam.</p>
+            <h1>Hi I'm</h1>
+            <div class="animate">Alakh Namdev</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae perferendis odit reprehenderit deleniti, laudantium rem ad veniam sint architecto magni. Nisi quidem debitis unde dicta voluptates necessitatibus minus aliquid deleniti. Vel aut cupiditate deleniti tenetur veritatis molestiae id laudantium temporibus cum! Pariatur, quisquam nisi? Quam.</p><br>
+            <button class="hidden hmbtn" id="hmbt">Hire Me</button>
         </div>
         <div class="hidden" id="con12">
             <div class="hidden" id="user">
                 <img src="Files/user alt.jpg" alt="">
             </div>
+        </div>
+        <div class="hidden" id="con13">
         </div>
     </div>
     <!-- Content 1 Ends -->
@@ -55,8 +56,7 @@
     <div class="hidden" id="con2">
         <div class="hidden" id="con21">
             <div class="h1">What I Am Great At</div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate
-                placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
             </p>
         </div>
         <div class="hidden" id="con22">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="hidden" id="con23">
-            <button class="hidden" id="hm">Let's Talk</button>
+            <button class="hidden hmbtn" id="hm">Let's Talk</button>
         </div>
     </div>
     <!-- Content 2 Ends -->
@@ -108,8 +108,7 @@
     <div class="hidden" id="con3">
         <div class="hidden" id="con21">
             <div class="h1">My Projects</div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate
-                placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
             </p>
         </div>
         <div class="hidden" id="con32">
@@ -124,10 +123,10 @@
             <div class="hidden hide" id="con-img"><img src="Files/alt.jpg" alt=""></div>
         </div>
         <div class="hidden" id="con34">
-            <button class="hidden" id="sm">Show More</button>
-            <button class="hidden" id="sl">Show Less</button>
-            <button class="hidden" id="smr">Show More</button>
-            <button class="hidden" id="slr">Show Less</button>
+            <button class="hidden hmbtn" id="sm">Show More</button>
+            <button class="hidden hmbtn" id="sl">Show Less</button>
+            <button class="hidden hmbtn" id="smr">Show More</button>
+            <button class="hidden hmbtn" id="slr">Show Less</button>
         </div>
     </div>
     <!-- Content 3 Ends -->
@@ -136,18 +135,17 @@
     <div class="hidden" id="con4">
         <div class="hidden" id="con21">
             <div class="h1">Ways To Contact Me</div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate
-                placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab dignissimos omnis voluptatum voluptate placeat recusandae laboriosam, tempora a voluptates iste quod iure maiores eligendi cumque!
             </p>
         </div>
         <div class="hidden" id="con42">
-            <div class="hidden" id="con-btn"><button><img class="btimg" src="Files/email.png" alt="">gmail</button>
+            <div class="hidden" id="con-btn"><button id="cnbtn"><img class="btimg" src="Files/email.png" alt="">gmail</button>
             </div>
-            <div class="hidden" id="con-btn"><button><img class="btimg" src="Files/phone.png" alt="">phone</button>
+            <div class="hidden" id="con-btn"><button id="cnbtn"><img class="btimg" src="Files/phone.png" alt="">phone</button>
             </div>
-            <div class="hidden" id="con-btn"><button><img class="btimg" src="Files/facebook.png"
+            <div class="hidden" id="con-btn"><button id="cnbtn"><img class="btimg" src="Files/facebook.png"
                         alt="">facebook</button></div>
-            <div class="hidden" id="con-btn"><button><img class="btimg" src="Files/whatsapp.png"
+            <div class="hidden" id="con-btn"><button id="cnbtn"><img class="btimg" src="Files/whatsapp.png"
                         alt="">whatsapp</button></div>
         </div>
         <div class="hidden" id="con43">Copyright @ 2023 Alakh Namdev. All Right Reserved</div>
@@ -156,7 +154,7 @@
 
     <!-- EndBar -->
     <div class="hidden" id="endbar">
-        <div class="hidden" id="end-btn"><a href="index.html"><img class="endbtimg" src="Files/home.png" alt="">Home</a>
+        <div class="hidden" id="end-btn"><a href="#con1"><img class="endbtimg" src="Files/home.png" alt="">Home</a>
         </div>
         <div class="hidden" id="end-btn"><a href="#con2"><img class="endbtimg" src="Files/about.png" alt="">About</a>
         </div>
