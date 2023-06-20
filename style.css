@@ -249,6 +249,8 @@ body {
 }
 
 #con32 {
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,6 +445,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 80px;
+    /* background-color: #1b1b1b; */
     border: none;
     font-size: 0.7em;
     color: #5aad53;
@@ -589,6 +592,7 @@ body {
 
 @media only screen and (max-width:750px) {
 
+    /* Navbar */
     #nseg {
         display: none;
     }
@@ -599,6 +603,7 @@ body {
         margin: 1em;
     }
 
+    /* Navbar Ends */
     #endbar {
         display: flex;
     }
@@ -620,10 +625,10 @@ body {
         padding-bottom: 1em;
     }
     #con4{
-        padding: 8em 3em;
+        padding: 8em 3em 6em 3em;
     }
     #con12{
-        padding-top: 2.5em;
+        padding: 2.5em 2em 0 2em;
     }
     #con11{
         grid-area: conp1;
