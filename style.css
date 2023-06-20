@@ -78,20 +78,18 @@ body {
 
 /* Content 1 */
 #con1 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5em 4em;
     align-items: center;
-    padding: 0em 4em;
-    margin-top: 10%;
+    gap: 2em;
 }
 
 #con11 {
-    width: 50%;
     padding: 4em 1em;
 }
 
 #con11 h1 {
-    color: #5aad53;
     font-size: 4em;
     margin: 0;
     background: linear-gradient(to right, #535210, #5aad53);
@@ -99,12 +97,29 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.animate{
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 0.3em;
+    background: linear-gradient(to right, #535210, #5aad53);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text 5s linear infinite ;
+    background-repeat: no-repeat;
+}
+@keyframes text {
+    0%,10%,100%{
+        background-size: 0;
+    }
+    70%,90%{
+        background-size: 100%;
+    }
+}
 #con12 {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 50%;
 }
 
 #con12 img {
@@ -135,7 +150,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5em;
+    padding: 5em 4em;
+    
 }
 
 #con21 {
@@ -177,7 +193,7 @@ body {
     width: 250px;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px 0 #5aad5336;
+    box-shadow: 0 0 10px 0px #5aad5336;
 }
 
 #mid-con h3 {
@@ -201,7 +217,7 @@ body {
     align-items: center;
 }
 
-#hm {
+.hmbtn {
     background: #181818;
     color: #5aad53;
     font-size: 1.3em;
@@ -212,7 +228,7 @@ body {
     /* box-shadow: 0px 0px 40px 0px rgba(25, 104, 18, 0.479); */
 }
 
-#hm:hover {
+.hmbtn:hover {
     background: #5aad53;
     color: #181818;
     transition: all 0.2s;
@@ -228,7 +244,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 5em 4em;
+    
 }
 
 #con32 {
@@ -262,32 +279,6 @@ body {
 #con-imgh {
     display: none;
 }
-
-#sm,
-#smr,
-#sl,
-#slr {
-    background: #181818;
-    color: #5aad53;
-    font-size: 1em;
-    font-weight: 900;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    /* box-shadow: 0px 0px 40px 0px rgba(25, 104, 18, 0.479); */
-}
-
-#sm:hover,
-#smr:hover,
-#sl:hover,
-#slr:hover {
-    background: #5aad53;
-    color: #181818;
-    transition: all 0.2s;
-    box-shadow: 0 0 40px 0 #5aad53;
-    cursor: pointer;
-}
-
 #sl,
 #smr,
 #slr {
@@ -371,7 +362,7 @@ body {
     background: none;
     color: #5aad53;
     border: none;
-    width: 18em;
+    max-width: 40em;
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 10px;
@@ -388,8 +379,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 8em 4em;
     align-items: center;
     text-align: center;
+    
 }
 
 #con42 {
@@ -421,11 +414,6 @@ body {
     transition: all 0.2s;
     box-shadow: 0 0 40px 0 #5aad53;
 }
-
-#con43 {
-    margin-bottom: 60px;
-}
-
 .btimg {
     height: 25px;
     width: 25px;
@@ -457,7 +445,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 80px;
-    background-color: #1b1b1b;
+    /* background-color: #1b1b1b; */
     border: none;
     font-size: 0.7em;
     color: #5aad53;
@@ -592,8 +580,8 @@ body {
     }
 
     #mid-con img {
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
     }
 
     #con32 img {
@@ -621,34 +609,49 @@ body {
     }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
     #con1 {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "conp2" "conp1";
+        justify-items: center;
+        text-align: justify;
+        gap: 0em;
     }
-
-    #con11 {
-        width: 120%;
+    #con1,#con2,#con3{
+        padding: 4em 2em;
     }
-
-    #con12 {
-        width: 100%;
+    #con1{
+        padding-bottom: 1em;
     }
-
+    #con4{
+        padding: 8em 3em;
+    }
+    #con12{
+        padding-top: 2.5em;
+    }
+    #con11{
+        grid-area: conp1;
+        margin-top: -2.5em;
+    }
+    #con11 h1{
+        font-size: 2.1em;
+    }
+    .animate{
+        font-size: 2.3em;
+    }
+    #con12{
+        grid-area: conp2;
+    }
     #con21 p {
-        padding: 1em;
-        font-size: 0.6em;
-        width: 100%;
+        padding: 1em 0;
+        width: 90%;
     }
-
-    #con4 {
-        padding: 2em;
-    }
-
     .h1 {
         font-size: 2em;
     }
 
-    #hm {
+    .hmbtn {
         font-size: 1em;
     }
 
