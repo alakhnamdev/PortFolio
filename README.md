@@ -1,2 +1,2 @@
 # PortFolio
-This is a PortFolio/Resume Website
+This is a PortFolio/Resume Landing Page
