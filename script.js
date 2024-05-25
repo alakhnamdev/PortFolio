@@ -46,9 +46,26 @@ hm.addEventListener("click", () => {
 	form.style.display = "block";
 });
 
+const addLinks = () => {
+	let links = document.querySelectorAll("#cnbtn");
+	links[0].addEventListener('click',() => {
+		window.open('mailto:namdev.alakh@gmail.com');
+	});
+	links[1].addEventListener('click',() => {
+		window.open('https://www.linkedin.com/in/alakhnamdev/');
+	});
+	links[2].addEventListener('click',() => {
+		window.open('https://x.com/alakhnamdev');
+	});
+	links[3].addEventListener('click',() => {
+		window.open('https://www.instagram.com/alakhnamdev');
+	});
+}
+addLinks();
+
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
-		console.log(entry)
+		// console.log(entry)
 		if (entry.isIntersecting) {
 			entry.target.classList.add("show");
 		}
