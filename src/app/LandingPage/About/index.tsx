@@ -5,7 +5,7 @@ export default function About({ ref }: AboutProps) {
   return (
     <div className="h-[100vh] w-full flex items-center justify-center" ref={ref}>
       <div className="w-full flex flex-col items-center gap-4 mt-10">
-        <h1 className="text-6xl font-bold bg-gradient-to-bl poppins to-green-950 from-green-400 bg-clip-text text-transparent">
+        <h1 className="lg:text-6xl text-4xl  font-bold bg-gradient-to-bl poppins to-green-950 from-green-400 bg-clip-text text-transparent">
           About Me
         </h1>
         <p className="w-[80vw] sm:w-1/2 text-gray-300 jetbrains text-lg text-center">
