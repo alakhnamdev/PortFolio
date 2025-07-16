@@ -2,7 +2,7 @@ import { Experience1Props } from "@/types/Experience";
 
 export default function Experience1({ experienceDetails }: Experience1Props) {
   return (
-    <div className="w-[80vw] p-10 pt-0 pb-5 border-l-2 border-green-950 relative">
+    <div className="w-[80vw] p-10 pt-0 pr-0 pb-5 border-l-2 border-green-950 relative">
       {experienceDetails.map((exp, idx) => (
         <div
           key={idx}

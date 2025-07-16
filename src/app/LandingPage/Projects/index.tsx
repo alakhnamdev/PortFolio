@@ -6,13 +6,13 @@ import Project2 from "./Project2";
 export default function Projects({ ref }: ProjectsProps) {
   return (
     <div className="min-h-[100vh] w-full flex flex-col items-center justify-center bg-gray-950/50 pt-30" ref={ref}>
-      <h2 className="text-6xl poppins bg-gradient-to-bl to-green-950 from-green-400 bg-clip-text text-transparent font-bold p-4">
+      <h2 className="lg:text-6xl text-4xl  poppins bg-gradient-to-bl to-green-950 from-green-400 bg-clip-text text-transparent font-bold p-4">
         My Projects
       </h2>
-      <p className="text-gray-300 mb-8">
+      <p className="text-gray-300 mb-8 sm:w-1/2 text-lg text-center">
         Here are some of the projects I&#39;ve worked on:
       </p>
-      <div className="w-[90vw] flex gap-10 justify-center h-full">
+      <div className="w-[90vw] grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-10 justify-center h-full">
         <Project2
           projectFeatures={projectFeatures2}
           projectStack={projectStack2}

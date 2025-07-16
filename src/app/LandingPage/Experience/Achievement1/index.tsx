@@ -2,7 +2,7 @@ import { Achievement1Props } from "@/types/Experience";
 
 export default function Achievement1({ achievements }: Achievement1Props) {
   return (
-    <div className="w-[80vw] p-10 py-0 border-l-2 border-green-950 text-gray-300 relative">
+    <div className="w-[80vw] p-10 pr-0 py-0 border-l-2 border-green-950 text-gray-300 relative">
       {achievements.map((ach, idx) => (
         <div
           key={idx}
