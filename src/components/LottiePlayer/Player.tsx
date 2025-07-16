@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 
 interface PlayerProps {
-  animationData: any;
+  animationData: object;
   loop?: boolean;
   autoplay?: boolean;
   width?: string;

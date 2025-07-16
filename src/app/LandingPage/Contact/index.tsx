@@ -10,16 +10,16 @@ export default function Contact({ ref }: ContactProps) {
         Get in Touch
       </h1>
       <p className="text-lg max-w-2xl text-center my-10">
-        I'd love to hear from you! Whether you have a project idea, want to
+        I&#39;d love to hear from you! Whether you have a project idea, want to
         collaborate, or just connect, feel free to reach out via email,
         LinkedIn, or GitHub. I value every message and will respond as soon as
-        possible. Let's create something great together!
+        possible. Let&#39;s create something great together!
       </p>
       <a
         href="mailto:namdev.alakh@gail.com"
         className="bg-green-400 font-black text-lg p-2 px-4 rounded-md text-gray-800 transition duration-300"
       >
-        Let's Connect
+        Let&#39;s Connect
       </a>
       <div className="mt-10 flex gap-4">
         <a href="mailto:namdev.alakh@gail.com">

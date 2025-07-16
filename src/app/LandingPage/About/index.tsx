@@ -9,7 +9,7 @@ export default function About({ ref }: AboutProps) {
           About Me
         </h1>
         <p className="w-[80vw] sm:w-1/2 text-gray-300 jetbrains text-lg text-center">
-          Hey I'm Alakh Namdev, A passionate developer with a knack for creating seamless user
+          Hey I&#39;m Alakh Namdev, A passionate developer with a knack for creating seamless user
           experiences. My journey in tech has been fueled by curiosity and a
           desire to solve real-world problems through innovative solutions.
         </p>
