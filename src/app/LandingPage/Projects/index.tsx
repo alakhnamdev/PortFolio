@@ -10,7 +10,7 @@ export default function Projects({ ref }: ProjectsProps) {
         My Projects
       </h2>
       <p className="text-gray-300 mb-8">
-        Here are some of the projects I've worked on:
+        Here are some of the projects I&#39;ve worked on:
       </p>
       <div className="w-[90vw] flex gap-10 justify-center h-full">
         <Project2
