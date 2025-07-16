@@ -15,11 +15,11 @@ const buttons = [
 
 export default function Navbar({ scrollToSection }: NavbarProps) {
   return (
-    <nav className="flex bg-black text-white p-4 shadow-xl shadow-green-400/25 fixed w-full top-0 z-50">
-      <h1 className="w-1/2 playfair text-4xl font-semibold -mt-1">
+    <nav className="grid lg:grid-cols-2 sm:grid-cols-1 bg-black text-white p-4 shadow-xl shadow-green-400/25 fixed w-full top-0 z-50">
+      <h1 className="playfair text-4xl lg:text-left sm:text-center text-center font-semibold -mt-1">
         Alakh Namdev
       </h1>
-      <div className="w-1/2 flex justify-end space-x-6">
+      <div className="lg:flex sm:hidden hidden justify-end space-x-6">
         {buttons.map((button, index) => (
           <button
             key={index}
