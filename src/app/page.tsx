@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import LandingPage from "./LandingPage";
 import { useRef } from "react";
+import BottomBar from "@/components/BottomBar";
 
 export default function Home() {
   
@@ -42,6 +43,7 @@ export default function Home() {
     <>
       <Navbar scrollToSection={scrollToSection} />
       <LandingPage refs={refs} />
+      <BottomBar scrollToSection={scrollToSection} />
     </>
   );
 }
