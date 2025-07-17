@@ -13,7 +13,7 @@ export default function About({ ref }: AboutProps) {
           experiences. My journey in tech has been fueled by curiosity and a
           desire to solve real-world problems through innovative solutions.
         </p>
-        <div className="mt-8 w-full flex flex-col items-center gap-6">
+        <div className="mt-8 w-full flex flex-col items-center gap-6 px-5">
           <h1 className="text-4xl font-bold poppins bg-gradient-to-bl to-green-950 from-green-400 bg-clip-text text-transparent">
             Education
           </h1>

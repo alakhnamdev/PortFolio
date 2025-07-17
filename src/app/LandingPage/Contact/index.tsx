@@ -6,10 +6,10 @@ import { ContactProps } from "@/types/Contact";
 export default function Contact({ ref }: ContactProps) {
   return (
     <div className="min-h-[100vh] w-full flex flex-col items-center justify-center bg-gray-950/50 text-gray-300 relative py-30" ref={ref}>
-      <h1 className="lg:text-6xl text-4xl  font-bold mb-8 poppins bg-gradient-to-bl to-green-950 from-green-400 bg-clip-text text-transparent">
+      <h1 className="lg:text-6xl text-4xl font-bold mb-0 poppins bg-gradient-to-bl to-green-950 from-green-400 bg-clip-text text-transparent">
         Get in Touch
       </h1>
-      <p className="text-lg max-w-2xl text-center my-10 px-10">
+      <p className=" lg:text-lg sm:text-sm text-sm max-w-2xl text-center my-10 px-10">
         I&#39;d love to hear from you! Whether you have a project idea, want to
         collaborate, or just connect, feel free to reach out via email,
         LinkedIn, or GitHub. I value every message and will respond as soon as
